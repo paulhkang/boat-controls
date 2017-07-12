@@ -16,7 +16,10 @@
  * 6) when entire array is filled out, save array as text file in current directory
  * 7) print to screen that the job is done */
 
-int main()
+
+
+// This function prompts the user to input a voltage spacing, and returns the necessary size of the data table (an array of sthuctures).
+int getSize()
 {
 	double volt_spacing, volt_spacing_x100, max_volt_x100;			// read in volt_spacing value
 
@@ -39,6 +42,21 @@ int main()
 	volt_spacing_x100 = volt_spacing * 100;
 	col = (int) max_volt_x100 / volt_spacing_x100 + 1;
 	printf("number of columns is %d\n\n", col);
+
+
+
+
+	return col;
+}
+
+
+
+
+
+// This function creates a struct array of given size, then fills it out with the data.
+// Then, it prints out the data to a text file called "data.txt".
+void dataFill(int col)
+{
 
 	struct data							// creates structure type "data" which contains the 4 data values
 	{
@@ -99,6 +117,17 @@ int main()
 
 	printf("The above data has also been saved in a file called \"data.txt\", which should be in the same directory that this executable file is in.\n");
 	printf("See the file \"tableREADME.txt\" for information about how the table is laid out.\n\n");
+}
+
+
+
+
+
+int main()
+{
+	int col = getSize();
+
+	dataFill(col);
 
 	return 0;
 }
