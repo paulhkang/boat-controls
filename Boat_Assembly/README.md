@@ -14,6 +14,10 @@ This directory contains files used in the design/assembly of the boat. Files inc
 
 	This directory includes CAD (SolidWorks) and drawing files of the boat hull and motor mount (initial version). These CAD files can be converted to .stl files and 3D-printed. Images of basic dimensioned drawings are also included.
 
+- Photos (directory)
+
+	Contains photos of Paul Kang and Jack Donnellan's boats.
+
 - TankData (directory)
 
 	This directory includes files from Dennis Larkin's thesis "An Experimental Testbed for Creating Controlled Lagrangian Coherent Structures", Drexel University, 2015. This thesis involved the creation of a similar boat for testing purposes. Files include Larkin's thesis, and CAD files of Larkin's boat. These files were useful in the design of our boat. Thanks to Dennis Larkin for providing these files.
